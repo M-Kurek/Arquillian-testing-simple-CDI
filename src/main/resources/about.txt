@@ -1,0 +1,28 @@
+mvn archetype:generate -DgroupId=com.javacodegeeks.snippets.enterprise.cdibeans  -DartifactId=cdibeans -DarchetypeArtifactId=maven-archetype-webapp 
+
+http://www.javacodegeeks.com/2013/06/java-ee-cdi-programmatic-dependency-disambiguation-example-injection-point-inspection.html
+
+________________________________________________________________--->
+A. zapomniala o web.xml i beans.xml
+
+B. na jBoss 
+org.jboss.weld.exceptions.IllegalArgumentException: WELD-001001 Cannot pass null expressionFactory
+
+SOL : usunac z war wald*.jar
+
+czyli:
+		<dependency>
+			<groupId>org.jboss.weld.servlet</groupId>
+			<artifactId>weld-servlet</artifactId>
+			<version>1.1.10.Final</version>
+			<scope>provided</scope>
+		</dependency>
+
+= OK
+
+usage : mvn clean install jboss-as:run
++ (np. na pom.xml) jboss-as:deploy
+
+i 
+http://localhost:8080/cdibeans/
+
