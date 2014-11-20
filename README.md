@@ -1,0 +1,2 @@
+Arquillian-testing-simple-CDI
+=============================
