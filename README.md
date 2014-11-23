@@ -2,11 +2,28 @@
 Demonstration of Arquillian testing made over [javacodegeeks article](http://www.javacodegeeks.com/2013/06/java-ee-cdi-programmatic-dependency-disambiguation-example-injection-point-inspection.html) - example usage of @Produces (javax.enterprise.inject.Produces).
 
 ## Prepare
-Project depends on java (JDK 6), maven and proper internet access ;).
+Project depends on java (JDK 7), maven and proper internet access ;).
+
+Quick prepare :
+- download and unpack 
+- browse to project folder
+- $ mvn clean install
 
 ## Run
+
+### Testing with Arquillian
+
+- mvn clean test
+- inspect ./target/surefire-reports
+
+OR
+
+- open in your IDE [GreeterHelloTest.java]() and run as JUnit test
+
+### Manual Testing
+
 - mvn clean install jboss-as:run
-- open http://localhost:8080/cdibeans/sayHello
+- open http://localhost:8080/cdi-arquillian + sayHello
 
 ## Details
 
