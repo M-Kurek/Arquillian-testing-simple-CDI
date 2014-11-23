@@ -1,5 +1,5 @@
 # CDI beans tested with Arquillian
-Demonstration of Arquillian testing made over [javacodegeeks article](http://www.javacodegeeks.com/2013/06/java-ee-cdi-programmatic-dependency-disambiguation-example-injection-point-inspection.html) - example usage of @Produces (javax.enterprise.inject.Produces).
+Demonstration of Arquillian testing made on [javacodegeeks example](http://www.javacodegeeks.com/2013/06/java-ee-cdi-programmatic-dependency-disambiguation-example-injection-point-inspection.html) : usage of @Produces (javax.enterprise.inject.Produces).
 
 ## Prepare
 Project depends on java (JDK 7), maven and proper internet access ;).
