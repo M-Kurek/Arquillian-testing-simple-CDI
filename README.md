@@ -18,7 +18,7 @@ Quick prepare :
 
 OR
 
-- open in your IDE [GreeterHelloTest.java]() and run as JUnit test
+- open in your IDE [GreeterHelloTest.java](blob/master/src/test/java/com/javacodegeeks/snippets/enterprise/cdibeans/GreeterHelloTest.java) and run as JUnit test
 
 ### Manual Testing
 
